@@ -29,33 +29,13 @@ const Header = () => {
 
     return (
         <div className="header">
-            <p>Heavenly Relaxation</p>
-
+            <a className="main" href="/">Heavenly Relaxation</a>
             <div className="header-right">
                 <Link className="active link" ref={home} to="/">Home</Link>
                 <Link className="link" to="/quran" ref={quran}>Quran</Link>
                 <Link className="link" to="/nature" ref={nature}>Nature</Link>
             </div>
         </div>
-
-        // <div className='header'>
-        //     <h1>Heavenly Relaxation</h1> <br />
-
-        //     {location.pathname === '/' && (
-        //         <Link to="/quran" className="btn">Quran</Link>)}
-        //     {location.pathname === '/' && (
-        //         <Link to="/nature" className="btn">Nature</Link>)}
-
-        //     {location.pathname === '/quran' && (
-        //         <Link to="/" className="btn">Home</Link>)}
-        //     {location.pathname === '/quran' && (
-        //         <Link to="/nature" className="btn">Nature</Link>)}
-
-        //     {location.pathname === '/nature' && (
-        //         <Link to="/" className="btn">Home</Link>)}
-        //     {location.pathname === '/nature' && (
-        //         <Link to="/quran" className="btn">Quran</Link>)}
-        // </div>
     )
 }
 

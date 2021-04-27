@@ -15,6 +15,11 @@ body {
     rgb(247, 247, 247) 23.8%,
     rgb(252, 221, 221) 92%
   ); */
+   background-image: linear-gradient(
+    0deg,
+    rgb(77, 75, 97) 23.8%,
+    rgb(187, 186, 189) 92%
+  );
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,11 +37,11 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 30px;
+  /* padding: 30px; */
   text-align: center;
   overflow: hidden;
-  background-color: #f1f1f1;
-  padding: 20px 10px;
+  /* background-color: #f1f1f1; */
+  padding: 30px 40px;
 }
 
 /* Style the header links */
@@ -52,12 +57,14 @@ body {
 }
 
 /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
-.header p {
-  font-size: 50px;
+.header .main {
+  font-size: 45px;
   font-family: Brush Script MT;
-  color: rgb(92, 60, 23);
+  color: rgb(68, 48, 25);
   text-decoration: none;
   font-weight: bold;
+  float: left;
+  margin-left: 35px; 
 }
 
 /* Change the background color on mouse-over */
@@ -84,7 +91,8 @@ body {
     display: block;
     text-align: left;
   }
-  .header p {
+  .header .main {
+    float: none;
     font-size: 40px;
   }
   .header-right {
@@ -126,7 +134,7 @@ body {
 } */
 
 .sound-type {
-  padding-top: 70px;
+  padding-top: 50px;
   padding-bottom: 20px;
   margin-top: 200px;
   text-align: center;
