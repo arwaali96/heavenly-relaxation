@@ -76,7 +76,6 @@ const Nature = () => {
             // console.log(e.srcElement.currentTime)
             const { duration, currentTime } = e.srcElement
             const progressPercent = (currentTime / duration) * 100
-            console.log(progress.current)
             progress.current.style.width = `${progressPercent}%`
         }
 
