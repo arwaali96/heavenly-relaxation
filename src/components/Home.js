@@ -6,6 +6,9 @@ const Home = () => {
             height: '100vh',
             width: "100vw"
         }}>
+            <div className="phrase">
+                <p>click listen relax.</p> <br />
+            </div>
             <div className="main-btns">
                 <a className="link" href="/quran" >Quran</a>
                 <a className="link" href="/nature">Nature</a>
