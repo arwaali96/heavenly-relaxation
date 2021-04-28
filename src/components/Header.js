@@ -42,7 +42,7 @@ const Header = () => {
             checkLocation()
         })
 
-    }, [])
+    }, [location.pathname])
 
     return (
         <div className="header">
