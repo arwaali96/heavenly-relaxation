@@ -20,7 +20,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding: 290px;
+  padding: 200px;
+  padding-top: 240px;
 }
 
 .main-btns .link {
@@ -28,12 +29,13 @@ body {
   height: 100px;
   width: 250px;
   text-align: center;
-  padding: 25px;
+  padding: 30px;
   text-decoration: none;
   font-size: 35px;
   background-color: rgba(238, 217, 220, 0.6);
   border-radius: 10px;
-  margin-right: 50px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .main-btns .link:hover {
@@ -102,13 +104,15 @@ body {
   .header .main {
     float: none;
     font-size: 40px;
+    text-align: center;
   }
   .header-right {
     float: none;
   }
 
   .sound-type{
-    margin-top: 85px;
+    margin-top: 220px;
+    color: white;
   }
 }
 
