@@ -114,7 +114,12 @@ const Quran = () => {
     }, [])
 
     return (
-        <div>
+        <div style={{ 
+            backgroundImage: 'url(/images/quran-back.jpeg)',
+            backgroundSize: 'cover',
+            height: '100vh',
+            width: "100vw"
+            }}>
             <h1 className="sound-type">Quran</h1>
 
             <div className="sound-container" ref={soundContainer}>

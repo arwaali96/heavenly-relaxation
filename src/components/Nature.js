@@ -109,7 +109,12 @@ const Nature = () => {
     }, [])
 
     return (
-        <div>
+        <div style={{ 
+            backgroundImage: 'url(/images/nature-back.jpeg)',
+            backgroundSize: 'cover',
+            height: '100vh',
+            width: "100vw"
+            }}>
             <h1 className="sound-type">Nature</h1>
 
             <div className="sound-container" ref={soundContainer}>
