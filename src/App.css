@@ -32,8 +32,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding: 200px;
-  padding-top: 40px;
+  padding: 130px;
 }
 
 .main-btns .link {
@@ -166,6 +165,15 @@ body {
   z-index: 10;
 }
 
+@media only screen and (max-height: 550px)  and (orientation: landscape) {
+  .main-btns .link {
+    display: none;
+  }
+
+  .sound-type {
+    display: none;
+  }
+}
 .image-container::after {
   content: '';
   background-color: white;

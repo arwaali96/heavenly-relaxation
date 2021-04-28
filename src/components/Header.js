@@ -48,7 +48,7 @@ const Header = () => {
         <div className="header">
             <a className="main" href="/">Heavenly Relaxation</a>
             <div className="header-right">
-                <a className="active link" ref={home} href="/">Home</a>
+                <a className="link" ref={home} href="/">Home</a>
                 <a className="link" href="/quran" ref={quran}>Quran</a>
                 <a className="link" href="/nature" ref={nature}>Nature</a>
             </div>
