@@ -128,12 +128,11 @@ body {
   }
 
   .phrase {
-    padding-top: 250px;
+    padding-top: 300px;
     font-size: 20px;
   }
   .main-btns .link {
-    margin-left: 5px;
-    margin-right: 5px;
+    margin: 1px;
   }
 }
 
