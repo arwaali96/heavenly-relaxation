@@ -116,7 +116,7 @@ const Quran = () => {
             pauseSong()
         });
 
-    }, [])
+    })
 
     return (
         <div className="player" style={{ 
