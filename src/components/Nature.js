@@ -110,7 +110,7 @@ const Nature = () => {
         window.addEventListener("beforeunload", function () {
             pauseSong()
         });
-    })
+    }, [])
 
     return (
         <div className="player" style={{ 
