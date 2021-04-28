@@ -106,10 +106,14 @@ const Nature = () => {
         progressContainer.current.addEventListener('click', setProgress)
 
         sound.current.addEventListener('ended', nextSong)
+
+        window.addEventListener("beforeunload", function () {
+            pauseSong()
+        });
     }, [])
 
     return (
-        <div style={{ 
+        <div className="player" style={{ 
             backgroundImage: 'url(/images/nature-back.jpeg)',
             backgroundSize: 'cover',
             height: '100vh',

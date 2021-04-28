@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom'
-
 const Home = () => {
     return (
         <div style={{
@@ -9,8 +7,8 @@ const Home = () => {
             width: "100vw"
         }}>
             <div className="main-btns">
-                <Link className="link" to="/quran" >Quran</Link>
-                <Link className="link" to="/nature">Nature</Link>
+                <a className="link" href="/quran" >Quran</a>
+                <a className="link" href="/nature">Nature</a>
             </div>
         </div>
     )

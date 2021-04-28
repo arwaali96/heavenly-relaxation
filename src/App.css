@@ -47,10 +47,8 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  /* padding: 30px; */
   text-align: center;
   overflow: hidden;
-  /* background-color: #f1f1f1; */
   padding: 30px 40px;
 }
 
@@ -94,7 +92,7 @@ body {
   float: right;
 }
 
-/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+/* Add media queries for responsiveness - when the screen is 550px wide or less, stack the links on top of each other */
 @media screen and (max-width: 550px) {
   .header .link {
     float: none;
@@ -108,12 +106,22 @@ body {
   .header-right {
     float: none;
   }
+
+  .sound-type{
+    margin-top: 85px;
+  }
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
 }
 
 .sound-type {
-  padding-top: 50px;
-  padding-bottom: 20px;
-  /* margin-top: 200px; */
+  padding-top: 30px;
   text-align: center;
 }
 
@@ -126,7 +134,7 @@ body {
   display: flex;
   padding: 20px 30px;
   position: relative;
-  margin: 100px 0;
+  margin: 100px 0px;
   z-index: 10;
 }
 
@@ -136,8 +144,6 @@ body {
   height: 20px;
   width: 20px;
   position: absolute;
-  /* left: 50%;
-  bottom: 50%; */
   border-radius: 50%;
   transform: translate(-275%, -65%);
 }
@@ -149,9 +155,6 @@ body {
   object-fit: cover;
   position: relative;
   bottom: 50px; 
-  /* position: absolute;
-  /* bottom: 0;
-  left: 0;  */ 
 
   animation: rotate 3s linear infinite;
 
@@ -185,7 +188,6 @@ body {
   color: #dfdbdf;
   font-size: 20px;
   cursor: pointer;
-  /* padding: 10px; */
   margin: 0 20px;
 }
 

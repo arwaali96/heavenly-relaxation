@@ -1,13 +1,15 @@
-import { Link } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 import { useEffect, useRef } from 'react';
 
 const Header = () => {
+    const location = useLocation()
 
     let home = useRef(null)
     let quran = useRef(null)
     let nature = useRef(null)
 
     useEffect(() => {
+
         const makeActive = (button) => {
             home.current.classList.remove('active')
             quran.current.classList.remove('active')
@@ -25,15 +27,30 @@ const Header = () => {
         nature.current.addEventListener('click', () => {
             makeActive(nature)
         })
+
+        const checkLocation = () => {
+            if (location.pathname === '/quran') {
+                makeActive(quran)
+            } else if (location.pathname === '/nature') {
+                makeActive(nature)
+            } else {
+                makeActive(home)
+            }
+        }
+
+        window.addEventListener('load', () => {
+            checkLocation()
+        })
+
     }, [])
 
     return (
         <div className="header">
             <a className="main" href="/">Heavenly Relaxation</a>
             <div className="header-right">
-                <Link className="active link" ref={home} to="/">Home</Link>
-                <Link className="link" to="/quran" ref={quran}>Quran</Link>
-                <Link className="link" to="/nature" ref={nature}>Nature</Link>
+                <a className="active link" ref={home} href="/">Home</a>
+                <a className="link" href="/quran" ref={quran}>Quran</a>
+                <a className="link" href="/nature" ref={nature}>Nature</a>
             </div>
         </div>
     )
