@@ -131,8 +131,12 @@ body {
     padding-top: 300px;
     font-size: 20px;
   }
+
+  .main-btns{
+    padding: 0px;
+  }
   .main-btns .link {
-    margin: 1px;
+    margin: 3px;
   }
 }
 
